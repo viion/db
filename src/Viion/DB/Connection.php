@@ -53,7 +53,7 @@ class Connection
         
         try {
             // setup connection
-            $this->Connection = new PDO($string, $config->user, $config->password, [
+            $this->Connection = new PDO($string, $config->user, $config->pass, [
                 PDO::ATTR_PERSISTENT => self::ATTR_PERSISTENT,
             ]);
             
